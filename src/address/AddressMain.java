@@ -64,33 +64,12 @@ public class AddressMain extends JFrame {
 		// b5.addActionListener(new cancelHandler());
 		add(b5);
 
-		b1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Viewdetails();
-
-			}
-		});
-		b2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new AddressBook();
-			}
-		});
-		b3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				new Editdetails();
-			}
-		});
-		b4.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new Delete();
-			}
-		});
-		b5.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				new About();
-
-			}
-		});
+		
+		b1.addActionListener(e -> new Viewdetails());		
+		b2.addActionListener(e -> new AddressBook());		
+		b3.addActionListener(e->new Editdetails());		
+		b4.addActionListener(e->new Delete());
+		b5.addActionListener(e->new About());
 		repaint();
 
 	}
